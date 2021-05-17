@@ -1,0 +1,50 @@
+h1 {
+  text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+}
+
+.teste{
+    text-align: center;
+}
+
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  text-: ;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.second {
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  margin-left: 300px;
+  display: inline-block;
+
+}
+
+.third {
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+
+}
+
+
