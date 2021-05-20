@@ -13,4 +13,4 @@ let divisao = a / b;
     console.log("Divisao: 10 / 10 =",divisao);
 
 let modulo = a % b;
-    console.log("Resto da Divisao: 10 / 10 =",modulo);
+    console.log("Resto da Divisao: 10 % 10 =",modulo);
