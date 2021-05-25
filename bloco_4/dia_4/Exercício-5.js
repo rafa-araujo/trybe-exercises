@@ -22,25 +22,13 @@ let info2 = {
 for (let key in info) {
   if (info[key] === info.recorrente && info[key] === 'SIM' && info2[key] === 'SIM') {
       
+    info.recorrente = 'Ambos recorrentes';
 
   } else {
-      console.log(info[key] + ' e ' + info2[key]);
+   
+   
+    console.log(info[key] + ' e ' + info2[key]);
       
       }
   
 };
-
-
-/*
-  for (let properties in info) {
-    if (
-      info[properties] === info.recorrente &&
-      info[properties] === 'Sim' &&
-      info2[properties] === 'Sim'
-    ) {
-      console.log('Ambos recorrentes');
-    } else {
-      console.log(info[properties] + ' e ' + info2[properties]);
-    }
-  }
-*/
