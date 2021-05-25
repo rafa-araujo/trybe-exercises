@@ -19,3 +19,5 @@ singer['fullName'] = singer.name + ' ' + singer.lastName;
 console.table(singer);
 
 console.log('O cantor ' + singer.fullName + ' nasceu no estado do ' + singer.bornInfo.state);
+
+console.log(singer.bestAlbuns);
