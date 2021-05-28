@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="paiDoPai">
+        <div id="pai">
+          <div id="primeiroFilho"></div>
+            <!-- filhoDoPrimeiroFilhoDoFilho-->
+          <div id="elementoOndeVoceEsta">
+            <div id="primeiroFilhoDoFilho"></div>
+            <div id="segundoEUltimoFilhoDoFilho"></div>
+          </div>
+          Atenção!
+          <div id="terceiroFilho"></div>
+          <div id="quartoEUltimoFilho"></div>
+        </div>
+      </div>
+
+    <script>
+      //Exercícios Parte 1
+      //1
+      document.querySelector('#elementoOndeVoceEsta');
+
+      //2
+      document.querySelector('#elementoOndeVoceEsta').parentElement.style.color
+
+      //3
+      document.querySelector('#primeiroFilhoDoFilho').innerText = 'O que o filho do meu filho é do irmão do meu filho!?';
+
+      //4
+      document.querySelector('#pai').firstElementChild;
+
+      //5
+      document.querySelector('#elementoOndeVoceEsta').previousElementSibling;
+
+      //6
+      document.querySelector('#elementoOndeVoceEsta').nextSibling;
+      
+      //7
+      document.querySelector('#elementoOndeVoceEsta').nextElementSibling;
+    
+      //8
+      document.querySelector('#pai').lastElementChild.previousElementSibling;
+
+      //Exercícios Parte 2
+      //1
+      let pai = document.getElementById('pai');
+      let irmaoElementoOndeVoceEsta = document.createElement('div');
+      irmaoElementoOndeVoceEsta.id = 'teste';
+      pai.appendChild(irmaoElementoOndeVoceEsta);
+
+      //2
+      let elementoOndeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+      let filhoElementoOndeVoceEsta = document.createElement('div');
+      filhoElementoOndeVoceEsta.id = 'filhoElementoOndeVoceEsta';
+      elementoOndeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+
+      //3
+      let primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+      let filhoDoPrimeiroFilhoDoFilho = document.createElement('div');
+      filhoDoPrimeiroFilhoDoFilho.id = 'filhoDoPrimeiroFilhoDoFilho';
+      primeiroFilhoDoFilho.appendChild(filhoDoPrimeiroFilhoDoFilho);
+
+      //4
+      document.querySelector('#filhoDoPrimeiroFilhoDoFilho').parentElement.parentElement.nextElementSibling;
+
+      //Exercício Parte 3
+     const pai = document.getElementById('pai');
+
+    for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+      const currentChildren = pai.childNodes[index];
+      if (currentChildren.id !== 'elementoOndeVoceEsta') {
+        currentChildren.remove();
+      }
+    }
+
+    const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+    segundoEUltimoFilhoDoFilho.remove();
+      
+
+    </script>
+  </body>
+</html>
+  <!--
+    Exercícios Parte 1
+      1- Acesse o elemento elementoOndeVoceEsta .
+      2- Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
+      3- Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior,   como fazer isso?
+      4- Acesse o primeiroFilho a partir de pai .
+      5- Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta .
+      6- Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta .
+      7- Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta .
+      8- Agora acesse o terceiroFilho a partir de pai .
+  
+    Exercícios Parte 2
+      1- Crie um irmão para elementoOndeVoceEsta .
+      2- Crie um filho para elementoOndeVoceEsta .
+      3- Crie um filho para primeiroFilhoDoFilho .
+      4- A partir desse filho criado, acesse terceiroFilho .
+  
+    Exercícios Parte 3
+    Remova todos os elementos filhos de paiDoPai exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho .
+
+    -->
