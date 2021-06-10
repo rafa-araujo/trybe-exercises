@@ -10,3 +10,16 @@ function addOptions() {
   };
 };
 addOptions();
+
+function name(params) {
+    
+  if (dia > 0 && dia <= 31 &&
+      mes > 0 && mes <= 12 &&
+      ano >= 0) {
+      
+
+  }else {
+      window.alert("Dia, mês ou ano inválido");
+  }
+
+}
