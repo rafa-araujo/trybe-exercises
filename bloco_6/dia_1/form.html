@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Formulário</legend>
+      <label>Nome</label>
+      <input type="text" maxlength="40" required>
+      <br>
+
+      <label>Email</label>
+      <input type="text" maxlength="50" required>
+      <br>
+
+      <label>CPF</label>
+      <input type="text" maxlength="11" required>
+      <br>
+
+      <label>Endereço</label>
+      <input type="text" maxlength="200" required>
+      <br>
+
+      <label>Cidade</label>
+      <input type="text" maxlength="28" required>
+      <br>
+
+      <label>Estado</label>
+      <select name="estado" id="estado" required>
+      <br>
+     
+      <input type="radio" id="casa" name="casaOuApto" value="casa">
+      <label for="casa">Casa</label>     
+
+      <input type="radio" id="apartamento" name="casaOuApto" value="apartamento">
+      <label for="apartamento">Apartamento</label>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Último emprego</legend>
+      <label for="resumo">Resumo currículo:</label><br>
+      <textarea id="resumo" name="resumo" rows="4" cols="50" maxlength="1000" placeholder="Digite aqui o resumo do seu curriculo (max 1000 caracteres)" required></textarea>
+      <br>
+
+      <label>Cargo</label>
+      <input type="text" maxlength="40" required>
+      <br>
+
+      <label>Descrição do cargo</label>
+      <input type="text" maxlength="500" required>
+      <br>
+
+      <label>Nome</label>
+      <input type="text" maxlength="40" required>
+      <br>
+
+      
+
+    </fieldset>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!--
+    1- Crie um <fieldset> para os seguintes dados pessoais:
+    [X]  -Nome - Texto
+        Limite de 40 caracteres
+        Campo obrigatório
+    [X]  -Email - Texto
+        Limite de 50 caracteres
+        Campo obrigatório
+    [X]  -CPF - Texto
+        Limite de 11 caracteres
+        Campo obrigatório
+    [X]  -Endereço - Texto
+        Limite de 200 caracteres
+        Campo obrigatório
+    [X]  -Cidade - Texto
+        Limite de 28 caracteres
+        Campo obrigatório
+    [X]  -Estado - Select
+        Todos os estados do Brasil
+        Utilize estruturas de repetição via JavaScript para gerar os <option>
+        Campo obrigatório
+    [X]  -Tipo - Radio Button
+        Casa, Apartamento
+        Campo obrigatório
+    
+    2- Crie outro <fieldset> para dados do seu último emprego
+    [X]    -Resumo do currículo - TextArea
+          Limite de 1000 caracteres
+          Campo obrigatório
+    [X]    -Cargo - Texto
+          Limite de 40 caracteres
+          Campo obrigatório
+    [X]    -Descrição do cargo - Texto
+          Limite de 500 caracteres
+          Campo obrigatório
+    []    -Data de início - Texto
+          Verificar o formato da data dd/mm/aaaa .
+          O dia deve ser > 0 e <= 31.
+          O mês deve ser > 0 e <= 12.
+          O ano não pode ser negativo.
+          Caso alguma das condições seja inválida no momento do envio do formulário, exibir via alert uma mensagem de erro contextualizada.
+          Campo obrigatório
+
+    3- Logo abaixo do formulário, crie um botão que:
+    []   Chame uma função JavaScript e interrompa o fluxo automático do form utilizando o preventDefault() . Note que isso vai impedir as validações do HTML ao fazer o submit
+    []  Implemente, agora, no Javascript , as validações que foram pedidas ao longo da montagem do formulário.
+    []  Caso todos os dados sejam válidos, monte uma <div> com o consolidado dos dados que foram inseridos no formulário.
+    []  Caso haja algum dado inválido, mostre em uma <div> uma mensagem de erro. Se o erro for na Data de Início , a mensagem deve ser contextualizada.
+    
+    4- Crie um botão Limpar que limpa todos os campos do formulário e a <div> com seu currículo também.
+    []
+    -->
