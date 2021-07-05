@@ -5,32 +5,14 @@
 // 3 - Crie mais uma função que retorne a string 'Partiu dormir!!' ;
 // 4 - Agora desenvolva uma HOF chamada doingThings e configure esta função para que imprima no console o resultado da execução das funções que você criou nos exemplos anteriores. Exemplo:
 
+const acordar = () => "Acordando!!";
+const cafe = () => "Bora tomar café!!";
+const dormir = () => "Partiu dormir!!";
 
-// Ao chamar a função doingThings:
-const doingThings = (wakeUp) => {
-  console.log();
-}
-
-// Ela deve retornar o valor do respectivo parâmetro, neste caso:
-// Acordando!!
-
-const acordar = (acordar) => "Acordando!!";
-console.log(acordar(acordar));
-
-const cafe = (cafe) => "Bora tomar café!!";
-console.log(cafe(cafe));
-
-function dormir(dormir) {
-  acordar = "Partiu dormir!!";
-  console.log(acordar);
-}
-
-// const acordar = (acordar) => {
-//   acordar = 'Acordando!!';
-// }
-// const cafe = (cafe) => {
-//   cafe = 'Bora tomar café!!';
-// }
-// const dormir = (dormir) => {
-//   dormir = 'Partiu dormir!!';
-// }
+const doingThings = (func) => {
+  const result = func();
+  console.log(result);
+};
+doingThings(acordar);
+doingThings(cafe);
+doingThings(dormir);
