@@ -22,4 +22,3 @@ const registerUser = () => {
 };
 
 button.addEventListener('click', registerUser);
-
