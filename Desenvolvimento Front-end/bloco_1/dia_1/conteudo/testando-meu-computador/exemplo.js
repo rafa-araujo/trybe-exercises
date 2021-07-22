@@ -35,7 +35,7 @@ const element = <h1 className={classe}>Hello, {nome}</h1>;
 
 //Para fixar, crie um elemento JSX que recebe o valor "Hello, JSX" de uma constante chamada textJSX , e o incorpore em uma tag h1 .
 
-const helloWorld = <h1>"Hello Worl!</h1>
-const textJSX = <h1>"Hello, JSX"</h1>
 
-console.log(helloWorld, textJSX);
+//const textJSX = <h1>"Hello, JSX"</h1>
+const helloWorld = <h1>"Hello Worl!</h1>
+console.log(helloWorld);
