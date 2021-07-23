@@ -15,13 +15,11 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React a
+          Learn React
         </a>
-        const textJSX = <h1>"Hello JSX!"</h1>;
       </header>
     </div>
   );
 }
-
 
 export default App;
