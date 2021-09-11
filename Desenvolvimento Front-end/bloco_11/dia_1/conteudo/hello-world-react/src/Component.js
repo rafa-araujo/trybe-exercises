@@ -1,14 +1,11 @@
-import React, { Component } from "react"
+import React from "react";
 
-class NameDesc extends Component {
+class HelloWorld extends React.Component {
   render() {
-    return ( 
-    <>
-      <h1>{ textJSX }</h1>
-    </>
-  )};
-};
+    return (
+      <span>Hello, World!</span>
+    )
+  }
+}
 
-const textJSX = 'Hello, JSX';
-
-export default NameDesc;
+export default HelloWorld;
