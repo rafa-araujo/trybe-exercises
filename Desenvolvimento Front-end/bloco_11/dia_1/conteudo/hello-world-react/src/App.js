@@ -1,8 +1,10 @@
 import React from 'react';
-import NameDesc from './Component';
+import HelloWorld from './Component';
 
 function App() {
-  return <NameDesc />
+  return (
+    <HelloWorld />
+  );
 };
 
 export default App;

@@ -1,12 +1,11 @@
-import React, { Component } from "react"
+import React from "react";
 
-class NameDesc extends Component {
+class HelloWorld extends React.Component {
   render() {
-    return <div>
-      <h1>Rafael Araujo</h1>
-      <p>Futuro DevWeb Full Stack</p>
-    </div>
+    return (
+      <span>Hello, World!</span>
+    )
   }
 }
 
-export default NameDesc;
+export default HelloWorld;

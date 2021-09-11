@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
-const Task = (value) => { 
+const Task = (value) => {
   return (
-    <li key={value}>{value}</li>
+    <li>{value}</li>
   );
 }
 
-const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+const tarefas = ['Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira'];
 
-class App extends React.Component {
+class App extends Component {
   render() {
     return (
-      <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
+      <ul> {tarefas.map(tarefa => Task(tarefa))} </ul> 
     );
   }
 }
