@@ -81,7 +81,7 @@
             nome: 'Beltrano',
             sobrenome: 'De Tal',
           });
-        }, 3000);
+        }, 2000);
       };
 
       store.subscribe(() => {
@@ -93,11 +93,6 @@
         document.getElementById('sobrenome-2').innerHTML = meuSegundoReducer;
       });
 
-      store.subscribe(() => {
-        const { colors, index } = store.getState();
-        document.getElementById('value').innerHTML = colors[index];
-        document.getElementById('container').style.backgroundColor = colors[index];
-      });
     </script>
   </body>
 </html>
