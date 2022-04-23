@@ -65,3 +65,20 @@ FROM
 		RIGHT JOIN 
 	Movies AS m ON t.id = m.theater_id
 ORDER BY t.name DESC;
+
+/* BONUS Exercício 6: Utilizando o INNER JOIN , selecione todas as informações dos filmes com avaliação maior que 8.*/
+SELECT * FROM BoxOffice; 
+SELECT * FROM Movies;	
+SELECT
+	m.title,
+    m.director,
+    m.year,
+    m.length_minutes,
+    m.theater_id,
+    b.rating
+FROM
+	Movies AS m
+		INNER JOIN
+	BoxOffice AS b ON m.id = b.movie_id
+WHERE 
+	b.rating > 8;
