@@ -96,4 +96,4 @@ SELECT rating, SUM(replacement_cost) as total_custo_substituicao
 FROM sakila.film
 GROUP by rating
 HAVING total_custo_substituicao > 3950.50
-ORDER By total_custo_substituicao ASC;
+ORDER By total_custo_substituicao;
