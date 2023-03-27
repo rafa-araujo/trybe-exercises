@@ -1,4 +1,5 @@
 -- Para fixar:
+
 -- 1.Queremos saber o Nome das pessoas colaboradoras e suas respectivas gerências (manager) cujos departamentos (department) são diferentes.
 SELECT
     CONCAT(employee.first_name, " ", employee.last_name) AS "Nome Pessoa Colaboradora",
